@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">&nbsp;</div>
-			<div class="col-sm-6"><textarea id="text" rows="3" cols="50" placeholder="Enter text here for injestion"></textarea></div>
+			<div class="col-sm-6"><textarea id="text" rows="3" cols="50" placeholder="Enter text here for ingestion"></textarea></div>
 			<div class="col-sm-3">&nbsp;</div>
 		</div>
 		<div class="row">
