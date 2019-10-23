@@ -1,0 +1,14 @@
+h5 {
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+#send, #search {
+	color: blue;
+	font-size: 15px;	
+}
+
+.container {
+	margin: 10px;
+}
