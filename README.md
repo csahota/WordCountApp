@@ -1,7 +1,7 @@
 # WordCountApp
 Distributed system for Producing and Consuming words through a Rest API to a Kafka cluster
 
-To run:
+Instruction for Mac OS:
 
 1. Download the appropriate binary build from https://kafka.apache.org/downloads and explode into a folder.
 2. Follow the Quickstart(https://kafka.apache.org/quickstart) instructions. Be sure to start Zookeeper before starting Kafka.
