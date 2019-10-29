@@ -11,11 +11,14 @@ $(document).ready(function(){
 	 
 	 $.post("DocumentServlet", {words: text},
 		  function(data, status){
-		    console.log("Data: " + data + "\nStatus: " + status);
+		    
+		 	console.log("Data: " + data + "\nStatus: " + status);
+		    
 		    $("#status")[0].innerHTML = data;
 		    $("#submitted-text")[0].innerHTML = text;
+		    
+			 $("#submit-response").show();
 		  });
-	 $("#submit-response").show();
 	 
   });
   

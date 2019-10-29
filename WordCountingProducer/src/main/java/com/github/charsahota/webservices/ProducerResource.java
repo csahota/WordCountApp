@@ -7,6 +7,8 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 
+import org.json.JSONObject;
+
 import com.github.charsahota.kafka.producer.KafkaProperties;
 import com.github.charsahota.kafka.producer.Producer;
 
@@ -35,7 +37,10 @@ public class ProducerResource {
     public String produce(String text) {
     	
     	System.out.println("Sent post : " + text);
-    	String[] strArry = Arrays.stream(text.substring(9, text.length()-2).split("\\W+"))
+
+		JSONObject jsonObj = new JSONObject(text);
+		String textStr = jsonObj.getString("text");
+    	String[] strArry = Arrays.stream(textStr.split("\\W+"))
     			  .map(String::trim)
     			  .toArray(String[]::new);
     	Producer producer = new Producer(KafkaProperties.TOPIC, true);
